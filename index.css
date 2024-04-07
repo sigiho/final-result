@@ -1,0 +1,328 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'pretendard';
+    max-width: 1920px;
+    max-height: 1080px;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    max-width: 1920px;
+    height: 1080px;
+}
+/* 사이드메뉴 */
+.sidemenu{
+    width: 300px;
+    height: 1080px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #F9FAFD;
+    border-right: 1px solid rgba(126, 150, 255, 0.16);
+}
+/* 로고 */
+#logo{
+    width: 124px;
+    height: 45px;
+    margin: 60px auto;
+}
+/* 메뉴리스트 */
+.menu{
+    width: 228px;
+    margin: 0 auto;
+}
+.menu li{
+    height: 44px;
+    color: #737373;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 0 14px;
+}
+#act{
+    background-color: #DBE2FD ;
+}
+#act a{
+    color: #4B65F4;
+    font-weight: 600;
+}
+.menu li a{
+    display: flex;
+    align-items: center;
+    color: #737373;
+}
+.menu li img{
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+.account{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    display: flex;
+    width: 228px;
+    margin: 0 auto;
+}
+.account img{
+    margin-right: 10px;
+}
+.account p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.account h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* 메인컨텐츠 */
+.main{
+    width: 1500px;
+    height: 980px;
+    margin: 60px 60px 60px 360px;
+}
+.main h2{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.top{
+    display: flex;
+    margin-top: 43px;
+}
+
+/* 횟수 */
+.count{
+    display: block;
+    width: 380px;
+    height: 320px;
+    border-radius: 24px;
+    border: 1px solid var(--stroke, rgba(126, 150, 255, 0.16));
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 16px 0px rgba(126, 150, 255, 0.20);
+    margin-right: 20px;
+    padding: 40px;
+}
+.count li {
+    display: flex;
+    justify-content: space-between;
+    margin: 9px 0;
+}
+.count li h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #4B65F4;
+}
+.count li p{
+    color: #444;
+    font-size: 20px;
+    font-weight: 400;
+}
+.count hr{
+    width: 300px;
+    height: 1px;
+    border: none;
+    background-color: #e7e7e7;
+}
+
+/* 백분위 */
+.hundred{
+    display: flex;
+    gap: 45px;
+    width: 540px;
+    height: 320px;
+    border-radius: 24px;
+    border: 1px solid var(--stroke, rgba(126, 150, 255, 0.16));
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(126, 150, 255, 0.20);
+    margin-right: 20px;
+    padding: 40px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 175px;
+}
+.info p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999;
+}
+.title{
+    font-size: 24px;
+    font-weight: 600px;
+    color: #333333;
+}
+
+/* 진단결과 요약 */
+.sumup{
+    display: block;
+    width: 540px;
+    height: 320px;
+    border-radius: 24px;
+    border: 1px solid var(--stroke, rgba(126, 150, 255, 0.16));
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(126, 150, 255, 0.20);
+    padding: 40px;
+}
+.info2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.info p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+}
+.info2 b{
+    color: #4B65F4;
+    font-weight: 800;
+}
+/* 그래프 */
+.ratio{
+    padding-top:20px;
+    padding-left: 40px;
+    margin: 0 auto;
+}
+.ratio li{
+    float:left;
+    position:relative;
+    width:35px;
+    height:150px;
+    margin-right:20px;
+    list-style:none
+}
+.ratio div{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color: #EDF0FE;
+    font-size:0;
+    border-radius: 20px 20px 0px 0px;
+}
+#selected{
+    background-color: #4B65F4;
+}
+
+/* 컨텐츠별 진척도 */
+.bottom{
+    display: flex;
+    margin-top: 20px;
+}
+
+.contents{
+    padding: 40px;
+    width: 740px;
+    height: 559px;
+    border-radius: 24px;
+    border: 1px solid var(--stroke, rgba(126, 150, 255, 0.16));
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(126, 150, 255, 0.20);
+    margin-right: 20px;
+}
+.contents .title{
+    margin-bottom: 40px;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.buttons1 a{
+    padding: 10px 25px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666666;
+}
+#drop1{
+    background-color:#EFF2FF ;
+    border: none;
+    padding: 6px 10px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+thead{
+    border-radius: 8px;
+    background-color: #EFF2FF;
+
+}
+table{
+    width: 660px;
+    padding: 18px 30px;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+table th{
+    text-align: left;
+    font-size: 20px;
+    color: #888888;
+    font-weight: 600;
+    padding: 18px 30px;
+}
+table td{
+    text-align: left;
+    font-size: 16px;
+    color: #666666;
+    font-weight: 500;
+    padding: 20px 30px;
+    border-bottom: 1px solid #EAEAEA;
+}
+/* 날짜별 진척도 */
+.days{
+    padding: 40px;
+    width: 740px;
+    height: 559px;
+    border-radius: 24px;
+    border: 1px solid var(--stroke, rgba(126, 150, 255, 0.16));
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(126, 150, 255, 0.20);
+}
+.days .title{
+    margin-bottom: 40px;
+}
+#drop2{
+    background-color:#EFF2FF ;
+    border: none;
+    padding: 6px 10px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+#date{
+    background-color: #f4f4f4;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 5px;
+}
+
+
+.pages{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+margin-top: 28px;}
+.pages img{
+    width: 20px;
+    height: 20px;
+}
+.pages a{
+    font-size: 16px;
+    color: #888888;
+}
