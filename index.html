@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidemenu">
+        <div id="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li id="act">
+                    <a href="#"><img src="./img/allblue.png" alt="">종합 결과</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/chart.png" alt="">진단 결과</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/live.png" alt="">실시간 모니터링</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/mypage.png" alt="">마이페이지</a>
+                </li>
+            </ul>
+        </div>
+        <div class="account">
+            <img src="./img/person.png" alt="">
+            <ul>
+                <li><h2>보호자</h2></li>
+                <li><p>manage1234</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>종합결과</h2>
+        <div class="top">
+            <div class="count">
+                <ul>
+                    <li>
+                        <h3>진단횟수</h3>
+                        <p>3회</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <h3>컨텐츠1</h3>
+                        <p>14회</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <h3>컨텐츠2</h3>
+                        <p>53회</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <h3>컨텐츠3</h3>
+                        <p>64회</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <h3>컨텐츠4</h3>
+                        <p>23회</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <h3>컨텐츠5</h3>
+                        <p>84회</p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="hundred">
+                <div class="info">
+                    <h3 class="title">핵심지표별 <br>백분위수</h3>
+                    <p>*최근 검사 기준</p>
+                </div>
+                <img src="./img/hundred.png" alt="">
+            </div>
+            <div class="sumup">
+                <div class="info2">
+                    <h3 class="title">진단결과 요약</h3>
+                    <p>진단 결과, 상위 24%로 <b>우수</b> 상태입니다.</p>
+                </div>
+                <ul class="ratio">
+                    <li><div style="height:20%"><em>30%</em></div></li>
+                    <li><div style="height:50%"><em>40%</em></div></li>
+                    <li><div style="height:30%"><em>50%</em></div></li>
+                    <li><div style="height:30%"><em>50%</em></div></li>
+                    <li><div style="height:90%"><em>50%</em></div></li>
+                    <li ><div id="selected" style="height:60%"><em>50%</em></div></li>
+                    <li><div style="height:20%"><em>20%</em></div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="contents">
+                <h3 class="title">컨텐츠별 진척도</h3>
+                <div class="options">
+                    <div class="buttons1">
+                        <a href="#" >컨텐츠1</a>
+                        <a href="#" >컨텐츠1</a>
+                        <a href="#" >컨텐츠1</a>
+                        <a href="#" >컨텐츠1</a>
+                    </div>
+                    <select name="drop1" id="drop1">
+                        <option value="">최신순</option>
+                        <option value="">오래된순</option>
+                        <option value="">점수순</option>
+                    </select>
+                </div>
+                <table>
+                    <colgroup>
+                        <col style="width: 30%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 30%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>날짜</th>
+                            <th>점수</th>
+                            <th>진행률</th>
+                            <th>횟수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-03-28</td>
+                            <td>34점</td>
+                            <td>67%</td>
+                            <td>3회</td>
+                        </tr>
+                        <tr>
+                            <td>2024-03-28</td>
+                            <td>34점</td>
+                            <td>67%</td>
+                            <td>3회</td>
+                        </tr>
+                        <tr>
+                            <td>2024-03-28</td>
+                            <td>34점</td>
+                            <td>67%</td>
+                            <td>3회</td>
+                        </tr>
+                        <tr>
+                            <td>2024-03-28</td>
+                            <td>34점</td>
+                            <td>67%</td>
+                            <td>3회</td>
+                        </tr>
+                    </tbody>
+                </table>       
+                <div class="pages">
+                    <a href=""><img src="./img/left.png" alt=""></a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#"><img src="./img/right.png" alt=""></a>
+                </div>        
+            </div>
+            <div class="days">
+                <h3 class="title">날짜별 진척도</h3>
+                <div class="options">
+                    <input type="date" id="date" max="2024-12-31" min="2000-01-01" value="2024-04-07">
+                    <select name="drop2" id="drop2">
+                        <option value="">가나다순</option>
+                        <option value="">최근순</option>
+                    </select>
+                </div>
+                <table>
+                    <colgroup>
+                        <col style="width: 30%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 30%;">
+                    </colgroup>
+                    <thead>
+                        <tr id="bg">
+                            <th>컨텐츠명</th>
+                            <th>점수</th>
+                            <th>진행률</th>
+                            <th>횟수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td>컨텐츠 1</td>
+                            <td>34점</td>
+                            <td>67%</td>
+                            <td>3회</td>
+                        </tr>
+                        <tr>
+                            <td>컨텐츠 2</td>
+                            <td>34점</td>
+                            <td>67%</td>
+                            <td>3회</td>
+                        </tr>
+                        <tr>
+                            <td>컨텐츠 3</td>
+                            <td>34점</td>
+                            <td>67%</td>
+                            <td>3회</td>
+                        </tr>
+                        <tr>
+                            <td>컨텐츠 4</td>
+                            <td>34점</td>
+                            <td>67%</td>
+                            <td>3회</td>
+                        </tr>
+                    </tbody>
+                </table>  
+                <div class="pages">
+                    <a href=""><img src="./img/left.png" alt=""></a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#"><img src="./img/right.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
